@@ -2,18 +2,18 @@ import React from 'react';
 import Navbar from './Navbar';
 import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
-import Spalsh from '../assests/img/spalsh.jpg';
 
 
-function Apples(){
+
+function App(){
   return (
     <div>
       
       <Navbar/>
-
+      <Home/>
       
     </div>
   );
 }
 
-export default Apples;
+export default App;

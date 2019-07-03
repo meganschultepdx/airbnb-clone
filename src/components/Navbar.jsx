@@ -4,16 +4,16 @@ function Navbar(){
   return (
     <div>
       <header>
-        <div logo></div>
-        <div spacer></div>
-        <div navbar content>
+        <div id="logo"><i className="fab fa-airbnb"></i></div>
+        <div id="nav-bar-spacer"></div>
+        <div className="navbarContent">
           <nav>
             <ul>
-              <li host home></li>
-              <li host exp></li>
-              <li help link to component></li>
-              <li sign up></li>
-              <li login></li>
+              <li className="host-home">Host a home</li>
+              <li className="host-exp">Host an experience</li>
+              <li className="help">Help</li>
+              <li className="signUp">Sign Up</li>
+              <li className="logIn">Log In</li>
             </ul>
           </nav>
         </div>
