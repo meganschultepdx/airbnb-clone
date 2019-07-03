@@ -1,21 +1,36 @@
 import React from 'react';
 
+
 function Navbar(){
   return (
     <div>
-      <header>
-        <div id="logo"><i className="fab fa-airbnb"></i></div>
+      <style jsx>{`
+        .navbar {
+          width: 100%;
+          background: rgb(255, 255, 255, 0);
+          position: fixed;
+          top: 0;
+          }
+
+        #logo {
+          margin-top: 10px;
+        }
+
+
+
+        `}</style>
+
+      <header className="navbar">
+        <div id="logo"><img src={require('../assests/img/airbnb-logo.png')} alt="airbnb logo" width="60px" /></div>
         <div id="nav-bar-spacer"></div>
         <div className="navbarContent">
-          <nav>
-            <ul>
-              <li className="host-home">Host a home</li>
-              <li className="host-exp">Host an experience</li>
-              <li className="help">Help</li>
-              <li className="signUp">Sign Up</li>
-              <li className="logIn">Log In</li>
-            </ul>
-          </nav>
+          <div id="navButtons">
+            <div className="host-home">Host a home</div>
+            <div className="host-exp">Host an experience</div>
+            <div className="help">Help</div>
+            <div className="signUp">Sign Up</div>
+            <div className="logIn">Log In</div>
+          </div>
         </div>
       </header>
     </div>
