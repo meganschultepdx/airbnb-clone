@@ -1,21 +1,17 @@
 import React from 'react';
-import Header from './Header';
+import Navbar from './Navbar';
 import Home from './Home';
-import NewTicketForm from './NewTicketForm';
 import { Switch, Route } from 'react-router-dom';
+import Spalsh from '../assests/img/spalsh.jpg';
+
 
 function Apples(){
-  var mainStyles = {
-    display: 'contents'
-  };
-
   return (
-    <div style={mainStyles}>
+    <div>
+      
       <Navbar/>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/newticket' component={NewTicketForm} />
-        </Switch>
+
+      
     </div>
   );
 }
