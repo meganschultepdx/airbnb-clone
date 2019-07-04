@@ -37,7 +37,8 @@ function Home() {
         }
 
         input {
-            border: 2px solid black;
+            border: 2px solid lightgrey;
+            background-color: lightgrey;
             border-radius: 4px;
         }
         `}</style>
