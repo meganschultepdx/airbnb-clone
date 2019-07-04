@@ -12,24 +12,51 @@ function Navbar(){
           top: 0;
           }
 
-        #logo {
-          margin-top: 10px;
+        #logo-container {
+          width: 80px;
+          margin-right: 0px;
         }
+
+        #logo {
+          margin-top: 20px;
+        }
+
+        #navbarContent {
+          display: inline;
+          float: right;
+        }
+
+        #navButtons {
+          display: inline-flex;
+          padding 40px;
+        }
+
+        #host-home, #host-exp, #help, #signUp {
+          padding-right: 20px;
+          color: white;
+          font-family: sans-serif;
+          font-size: 1em;
+        }
+
+        #logIn {
+          color: white;
+          font-family: sans-serif;
+          font-size: 1em;
+        }
+
 
 
 
         `}</style>
 
-      <header className="navbar">
-        <div id="logo"><img src={require('../assests/img/airbnb-logo.png')} alt="airbnb logo" width="60px" /></div>
-        <div id="nav-bar-spacer"></div>
-        <div className="navbarContent">
+      <header className="navbar"><img id="logo" src={require('../assests/img/airbnb-logo.png')} alt="airbnb logo" width="70px" />
+        <div id="navbarContent">
           <div id="navButtons">
-            <div className="host-home">Host a home</div>
-            <div className="host-exp">Host an experience</div>
-            <div className="help">Help</div>
-            <div className="signUp">Sign Up</div>
-            <div className="logIn">Log In</div>
+            <div id="host-home">Host a home</div>
+            <div id="host-exp">Host an experience</div>
+            <div id="help">Help</div>
+            <div id="signUp">Sign Up</div>
+            <div id="logIn">Log In</div>
           </div>
         </div>
       </header>
