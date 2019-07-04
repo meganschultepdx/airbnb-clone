@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Navbar(){
+function Navbar() {
   return (
     <div>
       <style jsx>{`
@@ -43,9 +43,6 @@ function Navbar(){
           font-family: sans-serif;
           font-size: 1em;
         }
-
-
-
 
         `}</style>
 
